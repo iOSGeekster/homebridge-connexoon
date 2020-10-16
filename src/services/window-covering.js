@@ -14,9 +14,10 @@ const Command = {
     UP: 'up',
     DOWN: 'down',
     MY: 'my',
+    STOP: 'stop',
 };
 
-const DEFAULT_COMMANDS = [Command.CLOSE, Command.MY, Command.OPEN];
+const DEFAULT_COMMANDS = [Command.CLOSE, Command.MY, Command.OPEN, Command.STOP];
 
 class WindowCovering extends Service {
     constructor({ api, log, accessory, config }) {
