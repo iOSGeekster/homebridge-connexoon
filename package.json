@@ -1,6 +1,6 @@
 {
     "name": "homebridge-connexoon",
-    "version": "2.1.0",
+    "version": "2.1.2",
     "description": "A Homebridge plugin providing support for the Connexoon, TaHoma and Cozytouch platforms and accessories.",
     "main": "index.js",
     "files": [
@@ -10,7 +10,9 @@
     "scripts": {
         "start": "homebridge -D -U ./homebridge-home -P .",
         "debug": "ndb npm start",
-        "lint": "npx prettier '**/*.{js,json,md,yml}' --check && eslint ."
+        "lint": "npx prettier '**/*.{js,json,md,yml}' --check && eslint .",
+        "watch": "npm run build && npm link && nodemon",
+        "build": "rimraf ./dist && tsc"
     },
     "keywords": [
         "homebridge-plugin",
@@ -37,12 +39,12 @@
         "request": "^2.88.2",
         "request-promise-native": "^1.0.9"
     },
-    "homepage": "https://github.com/yenoiwesa/homebridge-connexoon#readme",
+    "homepage": "https://github.com/iosGeekster/homebridge-connexoon#readme",
     "repository": {
         "type": "git",
-        "url": "git://github.com/yenoiwesa/homebridge-connexoon.git"
+        "url": "git://github.com/iosGeekster/homebridge-connexoon.git"
     },
     "bugs": {
-        "url": "http://github.com/yenoiwesa/homebridge-connexoon/issues"
+        "url": "http://github.com/iosGeekster/homebridge-connexoon/issues"
     }
 }
