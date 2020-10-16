@@ -10,10 +10,10 @@
 
     "platforms": [
         {
-            "platform": "Connexoon",
+            "platform": "TaHoma",
             "name": "Connexoon",
-            "username": "somfy account username",
-            "password": "somfy account password"
+            "username": "jesper@app-it.dk",
+            "password": "Muqsan-2xeghu-hivniv"
         }
     ]
 }
